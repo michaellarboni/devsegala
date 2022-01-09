@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        {% block stylesheets %}
+           <!-- Favicon -->
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		<!-- Web Fonts  -->
+		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+		<link rel="stylesheet" href="vendor/animate/animate.compat.css">
+		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/custom.css"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+		<!-- Skin CSS -->
+		<link id="skinCSS" rel="stylesheet" href="css/skins/default.css">
+
+        <!-- Head Libs -->
+		<script src="vendor/modernizr/modernizr.min.js"></script>
+
+        <!-- Leaflet Maps -->
+		    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+        <!-- Leaflet Maps end -->
+		
+        {% endblock %}
+
+        {% block javascripts %}
+            
+        {% endblock %}
+    </head>
+    <body>
+
+        
+        
+<body data-plugin-page-transition>
+		<div class="body">
+			<header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 70}">
+				<div class="header-body border-color-primary header-body-bottom-border">
+					<div class="header-top header-top-default border-bottom-0">
+						<div class="container">
+							<div class="header-row py-2">
+								<div class="header-column justify-content-start">
+									<div class="header-row">
+										<nav class="header-nav-top">
+											<ul class="nav nav-pills text-uppercase text-2">
+												<li class="nav-item nav-item-anim-icon d-none d-md-block">
+													<!--<a class="nav-link ps-0" href="{#{{ path('cgu') }}#}"><i class="fas fa-angle-right"></i></a>-->
+												</li>
+												<li class="nav-item nav-item-anim-icon d-none d-md-block">
+													<a class="nav-link" href="#contact"><i class="fas fa-angle-right"></i> Contact</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+								<div class="header-column justify-content-end">
+									<div class="header-row">
+										<nav class="header-nav-top">
+											<ul class="nav nav-pills">
+												<li class="nav-item">
+													<a href="mailto:webdevsegala@gmail.com"><i class="bi bi-envelope"></i> webdevsegala@gmail.com</a>
+												</li>
+												<li class="nav-item">
+													<a href="tel:06-04-01-39-84"><i class="bi bi-telephone-plus"></i> 06-04-01-39-84</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-container container">
+						<div class="header-row">
+							<div class="header-column">
+								<div class="header-row">
+									<div class="header-logo">
+										<a href="{{ path('home') }}">
+											<img alt="Webdevsegala" width="82" height="40" src="img/logo.png"></a><div class="societe">WEBDEVSEGALA</div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="header-column justify-content-end">
+								<div class="header-row">
+									<div class="header-nav header-nav-links header-nav-dropdowns-dark header-nav-light-text order-2 order-lg-1">
+										<div class="header-nav-main header-nav-main-font-lg header-nav-main-font-lg-upper-2 header-nav-main-mobile-dark header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
+											<nav class="collapse">
+												<ul class="nav nav-pills" id="mainNav">
+													<li class="dropdown">
+														<a data-hash class="nav-link active" href="#home">
+															Home
+														</a>
+													</li>
+													<li>
+														<a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="68" href="#services">Services</a>
+													</li>
+													<li>
+														<a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="68" href="#competences">Competences</a>
+													</li>
+													<li>
+														<a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="68" href="#projects">Portfolio</a>
+													</li>
+													<li>
+														<a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="68" href="#team">A propos</a>
+													</li>
+													<li>
+														<a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="68" href="{#{{ path('contact') }}#}#contact">Contact</a>
+													</li>
+												</ul>
+											</nav>
+										</div>
+										<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
+											<i class="fas fa-bars"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div role="main" class="main">
+				<div id="home" class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center show-dots-hover nav-inside nav-inside-plus nav-dark nav-md nav-font-size-md show-nav-hover mb-0" data-plugin-options="{'autoplayTimeout': 7000}" style="height: 100vh;">
+					<div class="owl-stage-outer">
+						<div class="owl-stage">
+
+							<!-- Carousel Slide 1 -->
+							<div class="owl-item position-relative pt-5" style="background-image: url(img/carousel/header-home.jpg); background-size: cover; background-position: center; background-color: #35383d;">
+								<div class="container position-relative z-index-3 h-100">
+									<div class="row justify-content-center align-items-center h-100">
+										<div class="col-lg-6">
+											<div class="d-flex flex-column align-items-center">
+												<h3 class="position-relative text-color-light text-4 line-height-5 font-weight-medium px-4 mb-3 appear-animation" data-appear-animation="fadeInDownShorterPlus" data-plugin-options="{'firstLoadNoAnim': true, 'minWindowWidth': 0}">
+													<span class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
+														<img src="img/slides/slide-title-border.png" class="w-auto appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="250" data-plugin-options="{'firstLoadNoAnim': true, 'minWindowWidth': 0}" alt="" />
+													</span>
+													DEVELOPPEUR WEB INDEPENDANT
+													<span class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
+														<img src="img/slides/slide-title-border.png" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="250" data-plugin-options="{'firstLoadNoAnim': true, 'minWindowWidth': 0}" alt="" />
+													</span>
+												</h3>
+												<h2 class="text-color-light font-weight-extra-bold text-12 mb-4 appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="500" data-plugin-options="{'firstLoadNoAnim': true, 'minWindowWidth': 0}">
+													WEB <span class="position-relative">DEV<span class="position-absolute left-50pct transform3dx-n50 bottom-0"><img src="img/slides/slide-blue-line-big.png" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="1000" data-plugin-options="{'firstLoadNoAnim': true, 'minWindowWidth': 0}" alt="" /></span></span> SEGALA
+												</h2>
+												<p class="text-4 text-color-light font-weight-light opacity-7 text-center mt-2 mb-4" data-plugin-animated-letters data-plugin-options="{'startDelay': 1000, 'firstLoadNoAnim': true, 'minWindowWidth': 0, 'animationSpeed': 25}">Passionné par les  <strong class="text-color-light">technologies</strong> liées au web, je mets mes compétences au service de vos besoins.</p>
+												<a href="#competences" class="btn btn-primary btn-rounded font-weight-bold text-3 px-5 py-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1600" data-plugin-options="{'firstLoadNoAnim': true, 'minWindowWidth': 0}">EN SAVOIR PLUS</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Carousel Slide 2 -->
+							<div class="owl-item position-relative overlay overlay-show overlay-op-8 pt-5" style="background-image: url(img/carousel/header-home.jpg); background-size: cover; background-position: center;">
+								<div class="container position-relative z-index-3 h-100">
+									<div class="row justify-content-center align-items-center h-100">
+										<div class="col-lg-6">
+											<div class="d-flex flex-column align-items-center">
+												<h3 class="position-relative text-color-light text-5 line-height-5 font-weight-medium px-4 mb-2 appear-animation" data-appear-animation="fadeInDownShorterPlus" data-plugin-options="{'minWindowWidth': 0}">
+													<span class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
+														<img src="img/slides/slide-title-border.png" class="w-auto appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
+													</span>
+													CRÉATION DE SITE WEB
+													<span class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
+														<img src="img/slides/slide-title-border.png" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
+													</span>
+												</h3>
+												<h2 class="text-color-light font-weight-extra-bold text-12 mb-3 appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="500" data-plugin-options="{'minWindowWidth': 0}">WEBDEVSEGALA</h2>
+												<p class="text-4 text-color-light font-weight-light opacity-7 text-center mb-0" data-plugin-animated-letters data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 25}">Site vitrine, <strong class="text-color-light">Corporate,</strong> e-commerce, blog ...</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Carousel Slide 3 -->
+							<div class="owl-item position-relative overlay overlay-show overlay-op-8 pt-5" style="background-image: url(img/carousel/header-home.jpg); background-size: cover; background-position: center;">
+								<div class="container position-relative z-index-3 h-100">
+									<div class="row justify-content-center align-items-center h-100">
+										<div class="col-lg-6">
+											<div class="d-flex flex-column align-items-center">
+												<h3 class="position-relative text-color-light text-4 line-height-5 font-weight-medium px-4 mb-2 appear-animation" data-appear-animation="fadeInDownShorterPlus" data-plugin-options="{'minWindowWidth': 0}">
+													<span class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
+														<img src="img/slides/slide-title-border.png" class="w-auto appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
+													</span>
+													CONCEPTION GRAPHIQUE & WEBDESIGN
+													<span class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
+														<img src="img/slides/slide-title-border.png" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
+													</span>
+												</h3>
+												<h2 class="porto-big-title text-color-light font-weight-extra-bold mb-3" data-plugin-animated-letters data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 250, 'animationName': 'fadeInRightShorterOpacity', 'letterClass': 'd-inline-block'}">WEBDEVSEGALA</h2>
+												<p class="text-4 text-color-light font-weight-light text-center mb-0" data-plugin-animated-letters data-plugin-options="{'startDelay': 2000, 'minWindowWidth': 0}">Logo, template web, carte de visite</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Carousel Slide 4 -->
+							<div class="owl-item position-relative video overlay overlay-show overlay-op-8 pt-5" style="background-image: url(img/carousel/header-home.jpg); background-size: cover; background-position: center;">
+								<div class="container position-relative z-index-3 h-100">
+									<div class="row justify-content-center align-items-center h-100">
+										<div class="col-lg-6">
+											<div class="d-flex flex-column align-items-center">
+												<h3 class="position-relative text-color-light text-5 line-height-5 font-weight-medium px-4 mb-2 appear-animation" data-appear-animation="fadeInDownShorterPlus" data-plugin-options="{'minWindowWidth': 0}">
+													<span class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
+														<img src="img/slides/slide-title-border.png" class="w-auto appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
+													</span>
+													MAINTENANCE INFORMATIQUE
+													<span class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
+														<img src="img/slides/slide-title-border.png" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
+													</span>
+												</h3>
+												<h2 class="text-color-light font-weight-extra-bold text-12 mb-3 appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="500" data-plugin-options="{'minWindowWidth': 0}">WEBDEVSEGALA</h2>
+												<p class="text-4 text-color-light font-weight-light opacity-7 text-center mb-0" data-plugin-animated-letters data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 25}">Mise à jour / Maintenance de website <strong class="text-color-light">Dépannage /</strong>  Configutation sur mesure / <strong class="bg-light">Nettoyage pc et portable.</strong></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="owl-nav">
+						<button type="button" role="presentation" class="owl-prev"></button>
+						<button type="button" role="presentation" class="owl-next"></button>
+					</div>
+					<div class="owl-dots mb-5">
+						<button role="button" class="owl-dot active"><span></span></button>
+						<button role="button" class="owl-dot"><span></span></button>
+						<button role="button" class="owl-dot"><span></span></button>
+						<button role="button" class="owl-dot"><span></span></button>
+					</div>
+				</div>
+
+{% block body %}{% endblock %}
+    </body>
+<footer id="footer" class="mt-0">
+				<div class="footer-copyright">
+					<div class="container py-2">
+						<div class="row py-4">
+							<div class="col d-flex align-items-center justify-content-center">
+								<p><strong>webdevsegala.fr</strong> - © Copyright 2021. All Rights Reserved. Siren 483.677.738</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+    
+</html>
+
+
+<!-- Leaflet Maps -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="crossorigin=""></script>
+        <script src="js/leaflet.js"></script>
+        <!-- Leaflet Maps end -->
+		<script src="js/lord.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<!--<script src="js/index.js"></script>-->
+		<!--<script src="js/project-show.js"></script>-->
+		<!--<script src="js/modal.js"></script>-->
+        <!-- Vendor -->
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/jquery.appear/jquery.appear.min.js"></script>
+		<script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+		<script src="vendor/jquery.cookie/jquery.cookie.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="vendor/jquery.validation/jquery.validate.min.js"></script>
+		<script src="vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+		<!--<script src="vendor/jquery.gmap/jquery.gmap.min.js"></script>-->
+		<script src="vendor/lazysizes/lazysizes.min.js"></script>
+		<script src="vendor/isotope/jquery.isotope.min.js"></script>
+		<script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+		<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script src="vendor/vide/jquery.vide.min.js"></script>
+		<script src="vendor/vivus/vivus.min.js"></script>
+
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+
+		<!--<script src="js/views/view.contact.js"></script>-->
+
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+
+	<!-- Examples -->
+		   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>

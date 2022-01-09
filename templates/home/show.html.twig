@@ -1,0 +1,33 @@
+{#{% extends 'base.html.twig' %}#}
+
+{% block title %}Project{% endblock %}
+
+{% block body %}
+    <h1>Project</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <span class="test">{{ project.id }}</span>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <img src="{{ asset('/uploads/' ~ project.images[0].name) }}" class="img-fluid border-radius-0" width="100" alt="">
+            </tr>
+            <tr>
+                <th>Title</th>
+                <td>{{ project.title }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ project.description }}</td>
+            </tr>
+            <tr>
+                <th>Url</th>
+                <td><a href="{{ project.url }}" target="_blank">Voir le site</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+{% endblock %}

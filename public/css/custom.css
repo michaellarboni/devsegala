@@ -1,0 +1,482 @@
+a.btn-btn-primary
+{
+
+}
+ 
+
+/*#competences*/
+
+.societe
+{
+font-size: 0.82rem;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0;   
+color:#ffffff;
+padding:5px;
+}
+
+.societe:hover
+{
+color:#0088CC;
+padding:5px;
+}
+
+.multi-responsive-screen
+{
+width: 300px;
+height: 150px;
+}
+
+#checkbox
+{
+width:15px;
+height:15px;
+margin: 5px;
+}
+
+.progress
+{
+margin-top: 45px;
+}
+.text-progress
+{
+    color: #ffffff;
+    /*font-size: large;*/
+    font-weight: bold;
+    
+}
+
+.img-dan
+{
+
+height: 250px;
+}
+
+#dan-social
+{
+text-align: center;
+}
+
+
+/* Leaflet maps */
+#maps
+{
+	margin-top: 140px;
+    width: 100%;
+    /*height: 80vh;*/
+}
+/* #contact */
+.button-send
+{
+background-color:#0088CC;
+}
+#contact {
+	background: #212529;
+	border-top: 4px solid #212529;
+	font-size: 0.9em;
+	margin-top: 50px;
+	padding: 0;
+	position: relative;
+	clear: both;
+}
+
+#contact .contact-ribbon {
+	background: #0088cc;
+	position: absolute;
+	margin: -20px 0 0 0;
+	padding: 10px 20px 6px 20px;
+}
+
+#contact .contact-ribbon:before {
+	border-right: 10px solid #646464;
+	border-top: 16px solid transparent;
+	content: "";
+	display: block;
+	height: 0;
+	right: 100%;
+	position: absolute;
+	top: 0;
+	width: 7px;
+}
+
+#contact .contact-ribbon span {
+	color: #FFF;
+	font-size: 1.6em;
+	font-family: "Shadows Into Light", cursive;
+}
+
+#contact h1, #contact h2, #contact h3, #contact h4, #contact h5, #contact h6 {
+	color: #FFF;
+}
+
+#contact a:not(.btn):not(.no-contact-css) {
+	color: #777;
+	transition: all 0.1s ease-in-out;
+}
+
+#contact a:not(.btn):not(.no-contact-css):hover {
+	text-decoration: none;
+	color: #FFF;
+}
+
+#contact a:not(.btn):not(.no-contact-css):focus, #contact a:not(.btn):not(.no-contact-css):active {
+	color: #CCC;
+}
+
+#contact a:not(.btn):not(.no-contact-css).text-color-light {
+	color: #FFF !important;
+}
+
+#contact a:not(.btn):not(.no-contact-css).text-color-light:hover {
+	color: #e6e5e5 !important;
+}
+
+#contact a:not(.btn):not(.no-contact-css).text-color-light:focus, #contact a:not(.btn):not(.no-contact-css).text-color-light:active {
+	color: #cccccc !important;
+}
+
+#contact a:not(.btn):not(.no-contact-css).text-color-default {
+	color: #777 !important;
+}
+
+#contact a:not(.btn):not(.no-contact-css).text-color-default:hover {
+	color: #919090 !important;
+}
+
+#contact a:not(.btn):not(.no-contact-css).text-color-default:focus, #contact a:not(.btn):not(.no-contact-css).text-color-default:active {
+	color: #5e5d5d !important;
+}
+
+#contact a:not(.btn):not(.no-contact-css).link-hover-style-1 {
+	position: relative;
+	left: 0px;
+	transition: all 0.1s ease-in-out;
+}
+
+#contact a:not(.btn):not(.no-contact-css).link-hover-style-1:hover {
+	left: 3px;
+}
+
+#contact ul.nav-list > li a {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	line-height: 20px;
+	padding-bottom: 11px;
+}
+
+#contact ul.nav-list > li:last-child a {
+	border-bottom: 0;
+}
+
+#contact ul.nav-list > li a:hover {
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+#contact ul.list.icons li {
+	margin-bottom: 5px;
+}
+
+#contact.contact-texts-more-lighten p, #contact.contact-texts-more-lighten span, #contact.contact-texts-more-lighten a:not(.btn):not(.no-contact-css), #contact.contact-texts-more-lighten li {
+	color: #a8a8a8;
+}
+
+#contact.contact-texts-more-lighten a:not(.btn):not(.no-contact-css):hover {
+	text-decoration: none;
+	color: #FFF;
+}
+
+#contact .contact-nav nav {
+	display: flex;
+}
+
+#contact .contact-nav nav > ul {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+#contact .contact-nav nav > ul > li {
+	position: relative;
+	height: 100%;
+	align-self: stretch;
+}
+
+#contact .contact-nav nav > ul > li > a {
+	position: relative;
+	background: transparent;
+	padding: 0 14.4px;
+	padding: 0 .9rem;
+	margin: 0;
+	height: 100%;
+	display: inline-flex;
+	align-items: center;
+	white-space: normal;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: -0.5px;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+}
+
+#contact .contact-nav.contact-nav-links nav > ul > li:first-child > a {
+	padding-left: 0;
+}
+
+#contact .contact-nav.contact-nav-links nav > ul > li:first-child > a:before {
+	left: 0;
+}
+
+@media (min-width: 768px) {
+	#contact .contact-nav.contact-nav-bottom-line nav > ul > li > a:before {
+		content: "";
+		position: absolute;
+		width: auto;
+		height: 3px;
+		top: 50%;
+		left: .85rem;
+		right: .85rem;
+		margin-top: 15px;
+		transform: translate3d(0, -50%, 0);
+	}
+}
+
+@media (max-width: 991px) {
+	#contact .contact-nav {
+		width: 100%;
+	}
+
+	#contact .contact-nav nav {
+		text-align: center;
+	}
+
+	#contact .contact-nav nav > ul {
+		width: 100%;
+	}
+
+	#contact .contact-nav nav > ul > li > a {
+		text-align: center;
+		padding: 5px 12px;
+	}
+}
+
+@media (max-width: 767px) {
+	#contact .contact-nav {
+		width: 100%;
+	}
+
+	#contact .contact-nav nav {
+		text-align: center;
+	}
+
+	#contact .contact-nav nav > ul {
+		width: 100%;
+	}
+
+	#contact .contact-nav nav > ul > li {
+		height: auto;
+		width: 100%;
+	}
+
+	#contact .contact-nav nav > ul > li > a {
+		text-align: center;
+		padding: 1em 0;
+	}
+}
+
+#contact form {
+	opacity: 0.85;
+}
+
+#contact form label.error {
+	line-height: 16px;
+	margin: 5px 0 -5px;
+	display: block;
+	clear: both;
+}
+
+#contact form .alert {
+	padding: 6px;
+	text-align: center;
+}
+
+#contact .logo img {
+	position: relative;
+	top: 2px;
+	image-rendering: -webkit-optimize-contrast;
+	transform: translateZ(0);
+}
+
+#contact .twitter [class*="fa-"], #contact .twitter .icons {
+	clear: both;
+	font-size: 1.5em;
+	position: relative;
+	top: 3px;
+	margin-right: -22px;
+	left: -30px;
+	color: #FFF;
+}
+
+#contact .twitter .meta {
+	color: #999;
+	display: block;
+	font-size: 0.9em;
+	padding-top: 3px;
+	opacity: 0.5;
+}
+
+#contact .twitter ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#contact .twitter ul li {
+	padding-bottom: 20px;
+	padding-left: 30px;
+}
+
+#contact .twitter ul li:last-child {
+	padding-bottom: 0;
+}
+
+#contact .twitter.twitter-dark [class*="fa-"], #contact .twitter.twitter-dark .icons {
+	color: #333;
+}
+
+#contact .twitter.twitter-dark .meta a {
+	color: #333;
+}
+
+#contact .twitter.twitter-light {
+	color: #FFF;
+}
+
+#contact .twitter.twitter-light [class*="fa-"], #contact .twitter.twitter-light .icons {
+	color: #FFF;
+}
+
+#contact .twitter.twitter-light .meta a {
+	color: #FFF;
+	opacity: 0.7;
+}
+
+#contact .twitter-account {
+	color: #FFF;
+	display: block;
+	font-size: 0.9em;
+	margin: -15px 0 5px;
+	opacity: 0.55;
+}
+
+#contact .twitter-account:hover {
+	opacity: 1;
+}
+
+#contact .contact-bg-color-2 {
+	background: #1c2023;
+}
+
+#contact .contact-copyright {
+	background: #1c2023;
+}
+
+#contact .contact-copyright nav {
+	font-size: 0.9em;
+}
+
+#contact .contact-copyright nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#contact .contact-copyright nav ul li {
+	display: inline-block;
+	line-height: 12px;
+	margin: 0;
+	padding: 0 8px;
+}
+
+#contact .contact-copyright nav ul li:first-child {
+	border: medium none;
+	padding-left: 0;
+}
+
+#contact .contact-copyright nav ul li:last-child {
+	padding-right: 0;
+}
+
+#contact .contact-copyright p {
+	color: #555;
+	margin: 0;
+	padding: 0;
+	font-size: 0.9em;
+}
+
+#contact .contact-copyright.contact-copyright-style-2 {
+	background: #212529;
+	border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#contact .contact-copyright.contact-copyright-border-grey {
+	border-top: 1px solid #E5E5E5;
+}
+
+#contact .contact-copyright.contact-copyright-full-width-border-top {
+	position: relative;
+	border-top: 0;
+}
+
+#contact .contact-copyright.contact-copyright-full-width-border-top:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 100vw;
+	border-top: 1px solid rgba(255, 255, 255, 0.05);
+	transform: translate3d(-50%, 0, 0);
+}
+
+#contact.contact-reveal {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: -10;
+}
+
+.contact-top-border {
+	border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.contact-bottom-border {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.contact-left-border {
+	border-left: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.contact-right-border {
+	border-right: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.contact-top-light-border {
+	border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.contact-bottom-light-border {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.contact-left-light-border {
+	border-left: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.contact-right-light-border {
+	border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
