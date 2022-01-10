@@ -326,8 +326,10 @@
 					</div>
 				</div>
 	   </section>
- 	<!-- Corps de la modale -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+	{% for project in projects %}
+	<!-- Corps de la modale -->
+<div class="modal fade" id="staticBackdrop-{{ project.id }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
@@ -336,12 +338,13 @@
       </div>
       <div class="modal-body">
     <h5 class="modal-description" id="staticBackdropLabel"></h5>
-      </div>
+		  <p>{{ project.description }} </p>
+	  </div>
 	<div class="modal-body">
     <!--<a target="_blank" href="#"  type="modal-url" class="btn btn-warning" id="staticBackdropLabel">visiter le site</a>-->
-	
-	<a class="modal-url" target="_blank" id="staticBackdropLabel">visiter le site</a>
-	
+
+	<a href="{{ project.url }}" class="modal-url" target="_blank" id="staticBackdropLabel">visiter le site</a>
+
       </div>
       <div class="modal-footer">
 	
@@ -354,7 +357,9 @@
 </div>
 
 <!-- fin de la modale -->
-       <section id="clients3" class="section section-background section-height-3 overlay overlay-show overlay-op-9 border-0 m-0" style="background-image: url(img/bg-one-page-1-1.jpg); background-size: cover; background-position: center;">
+	{% endfor %}
+
+	<section id="clients3" class="section section-background section-height-3 overlay overlay-show overlay-op-9 border-0 m-0" style="background-image: url(img/bg-one-page-1-1.jpg); background-size: cover; background-position: center;">
 					<div class="container">
 						<div class="row">
 							<div class="col text-center">
